@@ -109,14 +109,10 @@ export default function Navbar({
                 {button.label}
               </button>
             ) : (
-              <button
-                key={index}
-                className="relative overflow-hidden group flex items-center gap-2 border-2 border-[#273F2B] text-[#273F2B] px-3 lg:px-5 py-2 rounded-lg transition-all duration-500 text-sm lg:text-base"
-                onClick={button.onClick}
-              >
+              <div key={index} className="relative overflow-hidden group flex items-center gap-2 border-2 border-[#273F2B] text-[#273F2B] px-3 lg:px-5 py-2 rounded-lg transition-all duration-500 text-sm lg:text-base cursor-pointer" onClick={button.onClick}>
                 <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:text-white">
                   {button.label}
-                  <span className="p-2 bg-[#4A9F44] rounded-md transition-transform duration-500 rotate-45 group-hover:rotate-90">
+                  <span className="p-2 bg-[#4A9F44] rounded-md transition-transform duration-500 rotate-90 group-hover:rotate-90">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-4 w-4 text-white"
@@ -134,7 +130,7 @@ export default function Navbar({
                   </span>
                 </span>
                 <span className="absolute inset-0 bg-[#4A9F44] w-0 group-hover:w-full transition-all duration-500 ease-out origin-left"></span>
-              </button>
+              </div>
             )
           ))}
         </div>
@@ -160,10 +156,10 @@ export default function Navbar({
                       {button.label}
                     </button>
                   ) : (
-                    <button className="w-full relative overflow-hidden group flex items-center gap-2 border-2 border-[#273F2B] text-[#273F2B] px-4 py-2 rounded-lg transition-all duration-500">
+                    <div className="w-full relative overflow-hidden group flex items-center gap-2 border-2 border-[#273F2B] text-[#273F2B] px-4 py-2 rounded-lg transition-all duration-500 cursor-pointer" onClick={button.onClick}>
                       <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:text-white">
                         {button.label}
-                        <span className="p-2 bg-[#4A9F44] rounded-md transition-transform duration-500 rotate-45 group-hover:rotate-90">
+                        <span className="p-2 bg-[#4A9F44] rounded-md transition-transform duration-500 rotate-90 group-hover:rotate-360">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-4 w-4 text-white"
@@ -181,7 +177,7 @@ export default function Navbar({
                         </span>
                       </span>
                       <span className="absolute inset-0 bg-[#4A9F44] w-0 group-hover:w-full transition-all duration-500 ease-out origin-left"></span>
-                    </button>
+                    </div>
                   )}
                 </li>
               ))}
