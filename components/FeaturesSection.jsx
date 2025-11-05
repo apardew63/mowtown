@@ -79,7 +79,6 @@ export default function FeatureSection({
             stunning landscapes that exude civic pride
           </p>
 
-          {/* CTA Button */}
           <button className="relative overflow-hidden group flex items-center gap-2 border-2 border-[#26402B] text-[#26402B] px-4 sm:px-1 py-2 sm:py-1 rounded-lg transition-all duration-500 mt-4 mx-auto lg:mx-0">
             <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:text-white font-bold text-[16px]">
               Learn More
