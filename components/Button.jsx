@@ -15,7 +15,7 @@ export default function Button({
 
   const sizes = {
     small: "px-3 py-2 text-sm",
-    medium: "px-4 py-2 sm:px-5 sm:py-3 text-sm sm:text-base",
+    medium: "px-4 py-1 sm:px-3 sm:py-1 text-sm sm:text-base",
     large: "px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg",
   };
 
@@ -24,9 +24,9 @@ export default function Button({
       className={`${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`}
       {...props}
     >
-      <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:text-white">
+      <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:text-white font-bold text-[16px]">
         {children}
-        <span className={`p-2 sm:p-3 bg-[#4A9F44] rounded-md transition-transform duration-500 rotate-45 group-hover:rotate-90`}>
+        <span className={`p-2 sm:p-3 bg-[#4A9F44] rounded-md transition-transform duration-500 rotate-90 group-hover:rotate-90`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-4 w-4 sm:h-5 sm:w-5 text-white transition-transform duration-500"
