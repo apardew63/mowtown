@@ -24,12 +24,12 @@ export default function Button({
       className={`${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`}
       {...props}
     >
-      <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:text-white font-bold text-[16px]">
+      <span className="relative z-10 flex items-center gap-5 transition-all duration-300 group-hover:text-white font-bold text-[16px]">
         {children}
-        <span className={`p-2 sm:p-3 bg-[#4A9F44] rounded-md transition-transform duration-500 rotate-90 group-hover:rotate-90`}>
+        <span className={`py-4 px-5 bg-[#4A9F44] rounded-md transition-transform duration-500`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 sm:h-5 sm:w-5 text-white transition-transform duration-500"
+            className="h-4 w-4 sm:h-5 sm:w-5 text-white transition-transform duration-500 rotate-45 group-hover:rotate-90"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

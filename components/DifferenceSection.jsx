@@ -41,7 +41,6 @@ export default function DifferenceSection({
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/70 transition-all duration-700"></div>
 
-            {/* Content Box */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white px-6 py-8 sm:py-10 transition-all duration-700 ease-in-out group-hover:h-[90%] h-[40%] flex flex-col justify-start">
               {/* Title (always visible, moves up slightly on hover) */}
               <h3 className="text-2xl text-left sm:text-3xl font-bold font-aeonik mb-2 transform transition-all duration-700 group-hover:-translate-y-3">
@@ -58,30 +57,31 @@ export default function DifferenceSection({
 
               {/* Button fades in from bottom */}
               {/* Button fades in from bottom */}
-              <button className="relative overflow-hidden group/button inline-flex items-center gap-2 border-2 border-white text-white px-4 py-2 rounded-lg transition-all duration-700 delay-300 opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 w-[160px]">
-                <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover/button:text-[#26402B]">
-                  Learn More
-                  <span className="p-2 bg-[#4A9F44] rounded-md transition-transform duration-500 group-hover/button:rotate-90">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4 text-white transition-transform duration-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 10l7-7 7 7M12 3v18"
-                      />
-                    </svg>
-                  </span>
-                </span>
+             <button className="relative overflow-hidden group/button inline-flex items-center justify-between border-2 border-white text-white px-4 py-2 rounded-lg transition-all duration-700 delay-300 opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 w-[160px] whitespace-nowrap">
+  <span className="relative z-10 flex items-center justify-between w-full transition-all duration-300 group-hover/button:text-[#26402B] gap-2">
+    Learn More
+    <span className="py-5 px-5 bg-[#4A9F44] rounded-md transition-transform duration-500">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-4 w-4 text-white transition-transform duration-500 rotate-45 group-hover/button:rotate-90"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M5 10l7-7 7 7M12 3v18"
+        />
+      </svg>
+    </span>
+  </span>
 
-                {/* FIX: Wrap background in inline-block & center it */}
-                <span className="absolute left-0 top-0 bottom-0 bg-white w-0 group-hover/button:w-full transition-all duration-500 ease-out origin-left rounded-lg"></span>
-              </button>
+  {/* Background animation */}
+  <span className="absolute left-0 top-0 bottom-0 bg-white w-0 group-hover/button:w-full transition-all duration-500 ease-out origin-left rounded-lg"></span>
+</button>
+
             </div>
           </div>
         ))}
