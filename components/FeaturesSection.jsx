@@ -44,14 +44,28 @@ export default function FeatureSection({
             ))}
           </p>
           {/* CTA Button */}
-          <Button
-            variant="primary"
-            size="medium"
-            onClick={onButtonClick}
-            className="mx-auto lg:mx-0"
-          >
-            {buttonText}
-          </Button>
+          <button className="relative overflow-hidden group flex items-center gap-2 border-2 border-[#26402B] text-[#26402B] px-4 sm:px-1 py-2 sm:py-1 rounded-lg transition-all duration-500 mt-4 mx-auto lg:mx-0">
+            <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:text-white font-bold text-[16px]">
+              Learn More
+              <span className=" bg-[#4A9F44] rounded-md transition-transform duration-500 py-3 px-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 sm:h-5 sm:w-5 text-white transition-transform duration-500 rotate-45 group-hover:rotate-90"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 10l7-7 7 7M12 3v18"
+                  />
+                </svg>
+              </span>
+            </span>
+            <span className="absolute inset-0 bg-[#4A9F44] w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+          </button>
         </div>
 
         {/* Right Image */}
@@ -83,7 +97,7 @@ export default function FeatureSection({
           <button className="relative overflow-hidden group flex items-center gap-2 border-2 border-[#26402B] text-[#26402B] px-4 sm:px-1 py-2 sm:py-1 rounded-lg transition-all duration-500 mt-4 mx-auto lg:mx-0">
             <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:text-white font-bold text-[16px]">
               Learn More
-              <span className=" bg-[#4A9F44] rounded-md transition-transform duration-500 py-3 px-5">
+              <span className=" bg-[#4A9F44] rounded-md transition-transform duration-500 py-3 px-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4 sm:h-5 sm:w-5 text-white transition-transform duration-500 rotate-45 group-hover:rotate-90"
@@ -131,13 +145,13 @@ export default function FeatureSection({
           </p>
 
           {/* CTA Button */}
-          <button className="relative overflow-hidden group flex items-center gap-2 border-2 border-[#26402B] text-[#26402B] px-4 sm:px-3 py-2 sm:py-1 rounded-lg transition-all duration-500 mt-4 mx-auto lg:mx-0">
+         <button className="relative overflow-hidden group flex items-center gap-2 border-2 border-[#26402B] text-[#26402B] px-4 sm:px-1 py-2 sm:py-1 rounded-lg transition-all duration-500 mt-4 mx-auto lg:mx-0">
             <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:text-white font-bold text-[16px]">
               Learn More
-              <span className="p-2 sm:p-3 bg-[#4A9F44] rounded-md transition-transform duration-500 rotate-90 group-hover:rotate-90">
+              <span className=" bg-[#4A9F44] rounded-md transition-transform duration-500 py-3 px-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 sm:h-5 sm:w-5 text-white transition-transform duration-500"
+                  className="h-4 w-4 sm:h-5 sm:w-5 text-white transition-transform duration-500 rotate-45 group-hover:rotate-90"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -183,13 +197,13 @@ export default function FeatureSection({
           </p>
 
           {/* CTA Button */}
-          <button className="relative overflow-hidden group flex items-center gap-2 border-2 border-[#26402B] text-[#26402B] px-4 sm:px-3 py-2 sm:py-1 rounded-lg transition-all duration-500 mt-4 mx-auto lg:mx-0">
+          <button className="relative overflow-hidden group flex items-center gap-2 border-2 border-[#26402B] text-[#26402B] px-4 sm:px-1 py-2 sm:py-1 rounded-lg transition-all duration-500 mt-4 mx-auto lg:mx-0">
             <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:text-white font-bold text-[16px]">
               Learn More
-              <span className="p-2 sm:p-3 bg-[#4A9F44] rounded-md transition-transform duration-500 rotate-90 group-hover:rotate-90">
+              <span className=" bg-[#4A9F44] rounded-md transition-transform duration-500 py-3 px-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 sm:h-5 sm:w-5 text-white transition-transform duration-500"
+                  className="h-4 w-4 sm:h-5 sm:w-5 text-white transition-transform duration-500 rotate-45 group-hover:rotate-90"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
