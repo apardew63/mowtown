@@ -14,6 +14,7 @@ export default function FeatureSection({
 }) {
   return (
     <section
+      id="features"
       className={`bg-[#26402B] text-white py-12 sm:py-16 px-4 sm:px-6 font-aeonik ${className}`}
       style={{ backgroundImage: `url('${backgroundImage}')` }}
     >
